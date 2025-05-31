@@ -26,14 +26,16 @@ This Office Add-in allows users to upload two `.docx` files, compare their conte
 
 ## 📦 Project Structure
 
+```plaintext
 compare-docx/
 │
-├── manifest.xml # Office Add-in manifest
-├── taskpane.html # UI for the add-in
-├── taskpane.js # Logic for file upload, diff, and Word insertion
-├── styles.css # Optional custom styles
-├── assets/ # Icons, images, etc.
-├── README.md # This file
+├── manifest.xml       # Office Add-in manifest
+├── taskpane.html      # UI for the add-in
+├── taskpane.js        # Logic for file upload, diff, and Word insertion
+├── styles.css         # Optional custom styles
+├── assets/            # Icons, images, etc.
+├── README.md          # This file
+```
 
 
 ---
@@ -64,15 +66,23 @@ compare-docx/
 ```bash
 git clone https://github.com/your-username/compare-docx-office-addin.git
 cd compare-docx-office-addin
+```
 
-## Install Prerequisites
+### 📦 Install Prerequisites
+
+To get started, install the required global tools:
+
+```bash
 npm install -g yo generator-office
+```
 
-## Sideload in Word
+### Sideload in Word
+```bash
 npm install
 npm start
+```
 
-### 📄 Comparison Result Inserted in Word
+## 📄 Comparison Result Inserted in Word
 Here’s how the differences look inside the Word document.
 
 ![image](https://github.com/user-attachments/assets/82f998f8-0f0a-48b9-ae6e-11f30e3473aa)
